@@ -245,7 +245,11 @@ body {
    max-width: 540px;
    margin: 0 auto;
    text-align: center;
-   margin-bottom: 48px;
+   margin-bottom: 40px;
+}
+
+.features__section-info {
+   margin-bottom: 44px;
 }
 
 .section__title {
@@ -258,4 +262,44 @@ body {
 .section__description {
    font-size: 18px;
    line-height: 28px;
+}
+
+/* TABS */
+
+.tabs {
+}
+
+.tabs__list {
+   display: flex;
+   justify-content: center;
+}
+
+.tabs__item {
+   width: 243px;
+   border-bottom: 1px solid rgba(73, 93, 207, 0.2);
+}
+
+.tabs__link {
+   display: block;
+   text-align: center;
+   color: var(--text-color-75);
+   transition: all 0.4s ease;
+   padding: 28px 0;
+   border-bottom: 4px solid transparent;
+   font-size: 16px;
+   line-height: 17px;
+   letter-spacing: 0.5px;
+}
+
+.tabs__link:hover {
+   color: var(--red);
+}
+
+.tabs__link:active {
+   opacity: 0.6;
+}
+
+.tabs__item-active .tabs__link {
+   color: var(--text-color);
+   border-color: var(--red);
 }
