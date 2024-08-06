@@ -515,3 +515,98 @@ body {
 .accordion__item-open .accordion__item-content {
    display: block;
 }
+
+/* Subscription */
+
+.subscription {
+   padding: 58px 0 74px 0;
+   background-color: var(--blue);
+   color: #fff;
+
+}
+
+.subscription__inner {
+   max-width: 425px;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.subscription__count-text {
+   font-size: 13px;
+   line-height: 40px;
+   font-weight: 500;
+   letter-spacing: 5px;
+   margin-bottom: 24px;
+}
+
+.subscription__heading {
+   font-size: 32px;
+   line-height: 40px;
+   font-weight: 500;
+   margin-bottom: 36px;
+}
+
+.subscription__form {
+   display: flex;
+}
+
+.subscription__field-wrapper {
+   max-width: 300px;
+   width: 100%;
+   margin-right: 16px;
+   position: relative;
+}
+
+.subscription__field {
+   display: block;
+   width: 100%;
+   padding: 8px 0 8px 20px;
+   height: 100%;
+   border: 2px solid transparent;
+   border-radius:  5px;
+   font-size: 14px;
+   line-height: 28px;
+   font-size: 14px;
+   line-height: 28px;
+}
+
+
+
+.subscription__field:focus {
+   outline: none;
+}
+
+.subscription__error {
+   display: none;
+   position: absolute;
+   left: 0;
+   top: calc(100% - 4px);
+   font-size: 10px;
+   line-height: 12px;
+   text-align: left;
+   font-style: italic;
+   font-weight: 500;
+   padding: 4px 12px 6px;
+   background-color: var(--red);
+   color: #fff;
+   width: 100%;
+   border-radius: 0 0 5px 5px;
+}
+
+.subscription__field:not(:focus):not(:placeholder-shown):invalid {
+   border-color: var(--red);
+   background-image: url('../img/error-disc.svg');
+   background-repeat: no-repeat;
+   background-position: right 16px center;
+   padding-right: 52px;
+}
+
+
+.subscription__field:focus ~ .subscription__error, .subscriprion__field:valid ~ .subscription__error, .subscriprion__field:placeholder-shown ~ .subscription__error {
+   display: block;
+}
+
+.subscription__field:not(:focus):not(:placeholder-shown):invalid .subscription__error {
+   display: block;
+}
