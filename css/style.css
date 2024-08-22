@@ -42,6 +42,8 @@ body {
 
 .container {
    max-width: 1110px;
+   padding-left: 5px;
+   padding-right: 5px;
    width: 100%;
    margin: 0 auto;
 }
@@ -97,9 +99,13 @@ body {
    display: flex;
 }
 
+.sitenav__item {
+   margin-right: 48px;
+
+}
+
 .sitenav__link {
    display: block;
-   margin-right: 48px;
    color: var(--text-color);
    transition: all 0.4s ease;
 }
@@ -194,7 +200,7 @@ body {
 
 .hero__container {
    display: flex;
-   align-items: flex-start;
+   align-items: center;
 }
 
 .hero__content {
@@ -228,9 +234,9 @@ body {
 }
 
 .hero__img {
-   width: 578px;
-   height: 385px;
-   flex-shrink: 0;
+   display: block;
+   width: 100%;
+   height: auto;
 }
 
 
@@ -329,6 +335,7 @@ body {
 .feature-tab-panel__img {
    object-fit: contain;
    margin-right: 30px;
+   width: 100%;
 }
 
 .feature-tab-panel__info {
